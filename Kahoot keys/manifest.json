@@ -1,0 +1,15 @@
+   {
+      "name": "Kahoot keys",
+      "version": "1.0",
+      "manifest_version": 2,
+      "permissions": ["activeTab"],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*.kahoot.it/*"
+          ],
+          "js": ["keys.js"],
+          "persistent": true
+        }
+      ]
+    }
